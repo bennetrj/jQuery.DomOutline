@@ -84,13 +84,15 @@ var DomOutline = function (options) {
 
     function compileLabelText(element, width, height) {
         var label = element.tagName.toLowerCase();
-        if (element.id) {
+        return label;
+
+        /*if (element.id) {
             label += '#' + element.id;
         }
         if (element.className) {
             label += ('.' + jQuery.trim(element.className).replace(/ /g, '.')).replace(/\.\.+/g, '.');
         }
-        return label + ' (' + Math.round(width) + 'x' + Math.round(height) + ')';
+        return label + ' (' + Math.round(width) + 'x' + Math.round(height) + ')';*/
     }
 
     function getScrollTop() {
